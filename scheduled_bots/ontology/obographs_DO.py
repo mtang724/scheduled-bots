@@ -73,8 +73,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.local:
-        mediawiki_api_url = "http://localhost:7171/w/api.php"
-        sparql_endpoint_url = "http://localhost:7272/proxy/wdqs/bigdata/namespace/wdq/sparql"
+        mediawiki_api_url = "http://localhost:8401/w/api.php"
+        sparql_endpoint_url = "http://localhost:8402/proxy/wdqs/bigdata/namespace/wdq/sparql"
         login = wdi_login.WDLogin("testbot", "password", mediawiki_api_url=mediawiki_api_url)
     else:
         try:
