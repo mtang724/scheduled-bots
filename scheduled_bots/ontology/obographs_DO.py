@@ -86,8 +86,10 @@ if __name__ == "__main__":
             else:
                 raise ValueError("WDUSER and WDPASS must be specified in local.py or as environment variables")
 
-        mediawiki_api_url = 'https://www.wikidata.org/w/api.php'
-        sparql_endpoint_url = 'https://query.wikidata.org/sparql'
+        # mediawiki_api_url = 'https://www.wikidata.org/w/api.php'
+        # sparql_endpoint_url = 'https://query.wikidata.org/sparql'
+        mediawiki_api_url = "http://localhost:8401/w/api.php"
+        sparql_endpoint_url = "http://localhost:8402/proxy/wdqs/bigdata/namespace/wdq/sparql"
         login = wdi_login.WDLogin(user=WDUSER, pwd=WDPASS, mediawiki_api_url=mediawiki_api_url)
 
 
