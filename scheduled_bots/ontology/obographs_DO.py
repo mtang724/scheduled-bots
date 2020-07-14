@@ -90,7 +90,7 @@ if __name__ == "__main__":
         # sparql_endpoint_url = 'https://query.wikidata.org/sparql'
         mediawiki_api_url = "http://localhost:8401/w/api.php"
         sparql_endpoint_url = "http://localhost:8402/proxy/wdqs/bigdata/namespace/wdq/sparql"
-        login = wdi_login.WDLogin(user=WDUSER, pwd=WDPASS)
+        login = wdi_login.WDLogin(user=WDUSER, pwd=WDPASS, mediawiki_api_url=mediawiki_api_url)
 
 
 
